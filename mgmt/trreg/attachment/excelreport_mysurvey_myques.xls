@@ -1,0 +1,89 @@
+<h3> <center>Survey Name: &nbsp;&nbsp;mysurvey</center></h3>
+<h3> <center>Questionaire Name: &nbsp;&nbsp;myques</center></h3>
+
+<table id="testTable" width="100%" border= "5"> 
+<tr bgcolor="#AFEEEE" border= "5" >
+<td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>4</td><td>5</td><td>5</td><td>5</td><td>5</td><td>6</td><td>6</td><td>6</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>14</td><td>14</td><td>15</td><td>15</td><td>15</td><td></td></tr>
+<tr bgcolor="#AFEEEE" border= "5" >
+<td>UserId</td><td>Start Screen LatLong</td><td>Finish Screen LatLong</td><td>text question?</td><td>email question</td><td>numeric question</td><td>single select question</td><td>Please Specify</td><td>multi select question</td><td>multi select question</td><td>multi select question</td><td>multi select question</td><td>grid singleselect question</td><td>grid singleselect question</td><td>grid singleselect question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>image multi select question</td><td>image multi select question</td><td>image multi select question</td><td>image multi select question</td><td>image multi select question</td><td>grid scale question</td><td>this is information question</td><td>image single select question</td><td>date and time question</td><td>photocapture question</td><td>ranking question</td><td>ranking question</td><td>ranking question</td><td>weightage question</td><td>weightage question</td><td>weightage question</td><td>Signature</td></tr>
+<tr bgcolor="#AFEEEE" border= "5" >
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>statement1</td><td>statement2</td><td>statement3</td><td>statement4</td><td>Quality</td><td>Service</td><td>statement3</td><td>statement1</td><td>statement1</td><td>statement1</td><td>statement1</td><td>statement1</td><td>statement1</td><td>statement2</td><td>statement2</td><td>statement2</td><td>statement2</td><td>statement2</td><td>statement2</td><td>statement3</td><td>statement3</td><td>statement3</td><td>statement3</td><td>statement3</td><td>statement3</td><td>statement4</td><td>statement4</td><td>statement4</td><td>statement4</td><td>statement4</td><td>statement4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Quality</td><td>Service</td><td>statement3</td><td>weigh1</td><td>weigh2</td><td>weigh3</td><td></td></tr>
+<tr bgcolor="#87CEEB" border= "5" >
+<td>neha123mysurveymyques17420141250</td>
+<td>28.6108794<br>77.3833669</td>
+<td>28.6108794<br>77.3833669</td>
+<td>bhavna</td>
+<td>bhavna@gm.com</td>
+<td>96</td>
+<td>statement1</td><td></td>
+<td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>rat1</td>
+<td>rat2</td>
+<td>N/A</td><td>rat1</td>
+<td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>rat1</td>
+<td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>170</td>
+<td>N/A</td><td>N/A</td><td>17/4/2014</td>
+<td>N/A</td><td>1</td>
+<td>1</td>
+<td>3</td>
+<td>N/A</td><td>N/A</td><td>N/A</td><td><a target='_blank' href='http://www.tabmax.net/AndroidFiles/photo/neha123mysurveymyques17420141250.jpg'>photo/neha123mysurveymyques17420141250.jpg</a></td>
+<td>
+<form action="deleteanswer_sa.php" method="post">
+<input type="hidden" name="delete_id" value="neha123mysurveymyques17420141250" />
+<input type="hidden" name="cosupervisor2" value="myques" />
+<input type="hidden" name="survey" value="mysurvey" />
+<input type="submit" value="Delete" />
+</form>
+</td>
+</tr>
+<tr><p>&nbsp;</p></tr>
+</table>
+
+<table id="testTable" width="100%" border= "5"> 
+<tr bgcolor="#AFEEEE" border= "5" >
+<td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>4</td><td>5</td><td>5</td><td>5</td><td>5</td><td>6</td><td>6</td><td>6</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>14</td><td>14</td><td>15</td><td>15</td><td>15</td><td></td></tr>
+<tr bgcolor="#AFEEEE" border= "5" >
+<td>UserId</td><td>Start Screen LatLong</td><td>Finish Screen LatLong</td><td>text question?</td><td>email question</td><td>numeric question</td><td>single select question</td><td>Please Specify</td><td>multi select question</td><td>multi select question</td><td>multi select question</td><td>multi select question</td><td>grid singleselect question</td><td>grid singleselect question</td><td>grid singleselect question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>grid multi select question</td><td>image multi select question</td><td>image multi select question</td><td>image multi select question</td><td>image multi select question</td><td>image multi select question</td><td>grid scale question</td><td>this is information question</td><td>image single select question</td><td>date and time question</td><td>photocapture question</td><td>ranking question</td><td>ranking question</td><td>ranking question</td><td>weightage question</td><td>weightage question</td><td>weightage question</td><td>Signature</td></tr>
+<tr bgcolor="#AFEEEE" border= "5" >
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>statement1</td><td>statement2</td><td>statement3</td><td>statement4</td><td>Quality</td><td>Service</td><td>statement3</td><td>statement1</td><td>statement1</td><td>statement1</td><td>statement1</td><td>statement1</td><td>statement1</td><td>statement2</td><td>statement2</td><td>statement2</td><td>statement2</td><td>statement2</td><td>statement2</td><td>statement3</td><td>statement3</td><td>statement3</td><td>statement3</td><td>statement3</td><td>statement3</td><td>statement4</td><td>statement4</td><td>statement4</td><td>statement4</td><td>statement4</td><td>statement4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Quality</td><td>Service</td><td>statement3</td><td>weigh1</td><td>weigh2</td><td>weigh3</td><td></td></tr>
+<tr bgcolor="#87CEEB" border= "5" >
+<td>neha123mysurveymyques17420141252</td>
+<td>28.6108794<br>77.3833669</td>
+<td>28.6108794<br>77.3833669</td>
+<td>bjgd</td>
+<td>fghh</td>
+<td>58</td>
+<td>statement2</td><td></td>
+<td>N/A</td><td>statement2</td>
+<td>statement3</td>
+<td>N/A</td><td>rat1</td>
+<td>rat1</td>
+<td>rat1</td>
+<td>rat1</td>
+<td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>rat1</td>
+<td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>rat1</td>
+<td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>rat1</td>
+<td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>1</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>210</td>
+<td>N/A</td><td>N/A</td><td>17/4/2014</td>
+<td>N/A</td><td>1</td>
+<td>2</td>
+<td>3</td>
+<td>15</td>
+<td>15</td>
+<td>20</td>
+<td><a target='_blank' href='http://www.tabmax.net/AndroidFiles/photo/neha123mysurveymyques17420141252.jpg'>photo/neha123mysurveymyques17420141252.jpg</a></td>
+<td>
+<form action="deleteanswer_sa.php" method="post">
+<input type="hidden" name="delete_id" value="neha123mysurveymyques17420141252" />
+<input type="hidden" name="cosupervisor2" value="myques" />
+<input type="hidden" name="survey" value="mysurvey" />
+<input type="submit" value="Delete" />
+</form>
+</td>
+</tr>
+<tr><p>&nbsp;</p></tr>
+</table>

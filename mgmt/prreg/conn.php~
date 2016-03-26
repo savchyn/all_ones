@@ -1,0 +1,5 @@
+<?php 
+
+mysql_connect("localhost","root","mobileapp");
+mysql_select_db("nexg");
+?>

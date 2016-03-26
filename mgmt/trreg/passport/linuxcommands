@@ -1,0 +1,251 @@
+nespl-android@nesplandroid-desktop:~$ whereis htdocs
+htdocs:
+nespl-android@nesplandroid-desktop:~$ sudo su
+[sudo] password for nespl-android: 
+root@nesplandroid-desktop:/home/nespl-android# whereis htdocs
+htdocs:
+root@nesplandroid-desktop:/home/nespl-android# cd /opt/lampp/
+root@nesplandroid-desktop:/opt/lampp# ls
+apache2       etc      libexec            mysql           sbin
+bin           icons    licenses           pear            share
+build         img      logs               php             temp
+cgi-bin       include  man                phpmyadmin      uninstall
+ctlscript.sh  info     manager-linux.run  proftpd         uninstall.dat
+docs          lampp    manual             properties.ini  var
+error         lib      modules            RELEASENOTES    xampp
+root@nesplandroid-desktop:/opt/lampp# ls -l
+total 10068
+drwxr-xr-x  5 root   root      4096 Dec 31 21:09 apache2
+drwxrwxr-x  2 root   root     12288 Dec 31 21:10 bin
+drwxr-xr-x  2 root   root      4096 Dec 31 21:10 build
+drwxr-xr-x  2 root   root      4096 Dec 31 21:10 cgi-bin
+-rwxr-xr-x  1 root   root     27208 Dec 31 21:09 ctlscript.sh
+drwxr-xr-x  2 root   root      4096 Dec 31 21:10 docs
+drwxrwxr-x  3 root   root      4096 Dec 31 21:10 error
+drwxr-xr-x  8 root   root      4096 Dec 31 21:10 etc
+drwxr-xr-x  3 root   root      4096 Dec 31 21:09 icons
+drwxr-xr-x  2 root   root      4096 Dec 31 21:09 img
+drwxr-xr-x 20 root   root     12288 Dec 31 21:10 include
+drwxr-xr-x  2 root   root      4096 Dec 31 21:10 info
+lrwxrwxrwx  1 root   root        16 Dec 31 21:10 lampp -> /opt/lampp/xampp
+drwxr-xr-x 14 root   root     12288 Dec 31 21:11 lib
+drwxr-xr-x  2 root   root      4096 Dec 31 21:09 libexec
+drwxr-xr-x  2 root   root      4096 Dec 31 21:10 licenses
+drwxr-xr-x  2 daemon daemon    4096 Dec 31 21:11 logs
+drwxr-xr-x  7 root   root      4096 Dec 31 21:10 man
+-rwx------  1 root   root   3096815 Jun 10  2013 manager-linux.run
+drwxr-xr-x 14 root   root     12288 Dec 31 21:10 manual
+drwxr-xr-x  2 root   root      4096 Dec 31 21:10 modules
+drwxr-xr-x  3 root   root      4096 Dec 31 21:09 mysql
+drwxr-xr-x  2 root   root      4096 Dec 31 21:09 pear
+drwxr-xr-x  3 root   root      4096 Dec 31 21:09 php
+drwxr-xr-x  9 root   root      4096 Dec 31 21:10 phpmyadmin
+drwxr-xr-x  3 root   root      4096 Dec 31 21:09 proftpd
+-rw-r--r--  1 root   root       758 Dec 31 21:11 properties.ini
+-rw-r--r--  1 root   root     72183 Dec  4  2013 RELEASENOTES
+drwxr-xr-x  2 root   root      4096 Dec 31 21:10 sbin
+drwxr-xr-x 44 root   root      4096 Dec 31 21:10 share
+drwxrwxrwx  3 daemon daemon    4096 Jan  5 18:00 temp
+-rwx------  1 root   root   6696264 Dec 31 21:12 uninstall
+-rw-------  1 root   root    244244 Dec 31 21:12 uninstall.dat
+drwxr-xr-x  6 root   root      4096 Dec 31 21:19 var
+-rwxr-xr-x  1 root   root     15201 Jul 22  2013 xampp
+root@nesplandroid-desktop:/opt/lampp# cd ..
+root@nesplandroid-desktop:/opt# cd ..
+root@nesplandroid-desktop:/# ls
+bin    dev   initrd.img  media  proc  sbin     sys  var
+boot   etc   lib         mnt    root  selinux  tmp  vmlinuz
+cdrom  home  lost+found  opt    run   srv      usr
+root@nesplandroid-desktop:/# sudo updatedb; locate htdocs
+/opt/lampp/apache2/htdocs
+/opt/lampp/apache2/htdocs/lampstack.png
+/root/.local/share/Trash/files/htdocs
+/root/.local/share/Trash/files/htdocs/applications.html
+/root/.local/share/Trash/files/htdocs/bitnami.css
+/root/.local/share/Trash/files/htdocs/favicon.ico
+/root/.local/share/Trash/files/htdocs/img
+/root/.local/share/Trash/files/htdocs/index.php
+/root/.local/share/Trash/files/htdocs/sunlord
+/root/.local/share/Trash/files/htdocs/webalizer
+/root/.local/share/Trash/files/htdocs/xampp
+/root/.local/share/Trash/files/htdocs/img/module_table_bottom.png
+/root/.local/share/Trash/files/htdocs/img/module_table_top.png
+/root/.local/share/Trash/files/htdocs/sunlord/JOB# CREATION FORM.1.xlsx
+/root/.local/share/Trash/files/htdocs/sunlord/sunlord.sql
+/root/.local/share/Trash/files/htdocs/sunlord/web
+/root/.local/share/Trash/files/htdocs/sunlord/web/Merchant_jobcreation.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/Merchant_jobcreation.php~
+/root/.local/share/Trash/files/htdocs/sunlord/web/calendar.gif
+/root/.local/share/Trash/files/htdocs/sunlord/web/calendar.js
+/root/.local/share/Trash/files/htdocs/sunlord/web/connect.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/connect.php~
+/root/.local/share/Trash/files/htdocs/sunlord/web/customer_master.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/customer_master.php~
+/root/.local/share/Trash/files/htdocs/sunlord/web/dyn.html
+/root/.local/share/Trash/files/htdocs/sunlord/web/dyn.html~
+/root/.local/share/Trash/files/htdocs/sunlord/web/dynamicadd.html~
+/root/.local/share/Trash/files/htdocs/sunlord/web/dynjquery.html
+/root/.local/share/Trash/files/htdocs/sunlord/web/home.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/index.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/production_sequence.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/sequence.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/sequence.php~
+/root/.local/share/Trash/files/htdocs/sunlord/web/signup.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/view.css
+/root/.local/share/Trash/files/htdocs/sunlord/web/view.js
+/root/.local/share/Trash/files/htdocs/sunlord/web/viewjob_createitem.php
+/root/.local/share/Trash/files/htdocs/sunlord/web/viewjob_createitem.php~
+/root/.local/share/Trash/files/htdocs/webalizer/NOTEMPTY
+/root/.local/share/Trash/files/htdocs/xampp/.version
+/root/.local/share/Trash/files/htdocs/xampp/AnkeCalligraph.TTF
+/root/.local/share/Trash/files/htdocs/xampp/biorhythm.php
+/root/.local/share/Trash/files/htdocs/xampp/cds-fpdf.php
+/root/.local/share/Trash/files/htdocs/xampp/cds.php
+/root/.local/share/Trash/files/htdocs/xampp/cgi.cgi
+/root/.local/share/Trash/files/htdocs/xampp/charset.php
+/root/.local/share/Trash/files/htdocs/xampp/components.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-de.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-en.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-es.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-fr.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-it.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-nl.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-no.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-pl.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-pt_br.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook-zh.pl
+/root/.local/share/Trash/files/htdocs/xampp/guestbook.dat
+/root/.local/share/Trash/files/htdocs/xampp/head.php
+/root/.local/share/Trash/files/htdocs/xampp/iart.php
+/root/.local/share/Trash/files/htdocs/xampp/img
+/root/.local/share/Trash/files/htdocs/xampp/index.php
+/root/.local/share/Trash/files/htdocs/xampp/lang
+/root/.local/share/Trash/files/htdocs/xampp/lang.php
+/root/.local/share/Trash/files/htdocs/xampp/lang.tmp
+/root/.local/share/Trash/files/htdocs/xampp/langsettings.php
+/root/.local/share/Trash/files/htdocs/xampp/manuals.php
+/root/.local/share/Trash/files/htdocs/xampp/mysql.php
+/root/.local/share/Trash/files/htdocs/xampp/navi.php
+/root/.local/share/Trash/files/htdocs/xampp/perl.pl
+/root/.local/share/Trash/files/htdocs/xampp/phonebook.php
+/root/.local/share/Trash/files/htdocs/xampp/php.php
+/root/.local/share/Trash/files/htdocs/xampp/phpinfo.php
+/root/.local/share/Trash/files/htdocs/xampp/security.php
+/root/.local/share/Trash/files/htdocs/xampp/showcode.php
+/root/.local/share/Trash/files/htdocs/xampp/softwarelist.inc
+/root/.local/share/Trash/files/htdocs/xampp/splash-logo.php
+/root/.local/share/Trash/files/htdocs/xampp/splash-swf.php
+/root/.local/share/Trash/files/htdocs/xampp/splash.php
+/root/.local/share/Trash/files/htdocs/xampp/sqlite
+/root/.local/share/Trash/files/htdocs/xampp/ssi.inc
+/root/.local/share/Trash/files/htdocs/xampp/ssi.shtml
+/root/.local/share/Trash/files/htdocs/xampp/start.php
+/root/.local/share/Trash/files/htdocs/xampp/status.php
+/root/.local/share/Trash/files/htdocs/xampp/test
+/root/.local/share/Trash/files/htdocs/xampp/test.php
+/root/.local/share/Trash/files/htdocs/xampp/webalizer.php
+/root/.local/share/Trash/files/htdocs/xampp/xampp.css
+/root/.local/share/Trash/files/htdocs/xampp/xampp.js
+/root/.local/share/Trash/files/htdocs/xampp/contrib/BabelSans-B.fdb
+/root/.local/share/Trash/files/htdocs/xampp/contrib/cds.xml
+/root/.local/share/Trash/files/htdocs/xampp/contrib/dom.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/interbase.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/interbase.pl
+/root/.local/share/Trash/files/htdocs/xampp/contrib/mcrypt.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/mingstats.html
+/root/.local/share/Trash/files/htdocs/xampp/contrib/mingstats_swf.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/mysql.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/mysql.pl
+/root/.local/share/Trash/files/htdocs/xampp/contrib/oracle.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/oracle.pl
+/root/.local/share/Trash/files/htdocs/xampp/contrib/postgresql.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/postgresql.pl
+/root/.local/share/Trash/files/htdocs/xampp/contrib/sax.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/soap.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/sql2xml.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/sqlite.php
+/root/.local/share/Trash/files/htdocs/xampp/contrib/sqlite.pl
+/root/.local/share/Trash/files/htdocs/xampp/contrib/sqlnet.log
+/root/.local/share/Trash/files/htdocs/xampp/contrib/testperldbi.pl
+/root/.local/share/Trash/files/htdocs/xampp/contrib/xmlrss.php
+/root/.local/share/Trash/files/htdocs/xampp/img/apachefriends.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/bitnami-xampp.png
+/root/.local/share/Trash/files/htdocs/xampp/img/blank.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/head-for.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/head-fuer.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/head-linux.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/head-macosx.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/head-solaris.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/head-windows.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/head-xampp.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/lb.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/logo-big.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/logo-small.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/logo-small.jpg
+/root/.local/share/Trash/files/htdocs/xampp/img/lt.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/new.png
+/root/.local/share/Trash/files/htdocs/xampp/img/rb.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/rt.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/signature-kay.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/signature-oswald.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/status1.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/status2.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/status3.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/status4.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/status5.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/strichel.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/xampp-logo-new.gif
+/root/.local/share/Trash/files/htdocs/xampp/img/xampp-logo.jpg
+/root/.local/share/Trash/files/htdocs/xampp/lang/de.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/en.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/es.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/fr.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/it.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/jp.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/languages.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/nl.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/no.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/pl.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/pt_br.php
+/root/.local/share/Trash/files/htdocs/xampp/lang/zh.php
+/root/.local/share/Trash/files/htdocs/xampp/sqlite/.htaccess
+/root/.local/share/Trash/files/htdocs/xampp/sqlite/phonebook.sqlite3
+/root/.local/share/Trash/files/htdocs/xampp/test/xampp_ming
+/root/.local/share/Trash/files/htdocs/xampp/test/xampp_ming.zip
+/root/.local/share/Trash/files/htdocs/xampp/test/xampp_win.png
+/root/.local/share/Trash/files/htdocs/xampp/test/xampp_ming/bitmaps.php
+/root/.local/share/Trash/files/htdocs/xampp/test/xampp_ming/gif.gif
+/root/.local/share/Trash/files/htdocs/xampp/test/xampp_ming/jpg.jpg
+/root/.local/share/Trash/files/htdocs/xampp/test/xampp_ming/png.png
+/root/.local/share/Trash/info/htdocs.trashinfo
+root@nesplandroid-desktop:/# cd ..
+root@nesplandroid-desktop:/# ls
+bin    dev   initrd.img  media  proc  sbin     sys  var
+boot   etc   lib         mnt    root  selinux  tmp  vmlinuz
+cdrom  home  lost+found  opt    run   srv      usr
+root@nesplandroid-desktop:/# cd root/.local/
+root@nesplandroid-desktop:~/.local# ls
+share
+root@nesplandroid-desktop:~/.local# cd share/
+root@nesplandroid-desktop:~/.local/share# ls
+recently-used.xbel  Trash  webkit  zeitgeist
+root@nesplandroid-desktop:~/.local/share# cd Trash/
+root@nesplandroid-desktop:~/.local/share/Trash# ls
+files  info
+root@nesplandroid-desktop:~/.local/share/Trash# cd files/
+root@nesplandroid-desktop:~/.local/share/Trash/files# ls
+htdocs                      Merchant_jobcreation.5.php  sunlord.4.sql
+mail                        Merchant_jobcreation.6.php  sunlord.5.sql
+Merchant_jobcreation.2.php  Merchant_jobcreation.php    sunlord.6.sql
+Merchant_jobcreation.3.php  sunlord.2.sql               sunlord.sql
+Merchant_jobcreation.4.php  sunlord.3.sql               viewjob_createitem.php
+root@nesplandroid-desktop:~/.local/share/Trash/files# cd htdocs/
+root@nesplandroid-desktop:~/.local/share/Trash/files/htdocs# ls
+applications.html  favicon.ico  index.php  webalizer
+bitnami.css        img          sunlord    xampp
+root@nesplandroid-desktop:~/.local/share/Trash/files/htdocs# cd ..
+root@nesplandroid-desktop:~/.local/share/Trash/files# cp -R htdocs/ /opt/lampp/
+root@nesplandroid-desktop:~/.local/share/Trash/files# cd /home/nespl-android/Desktop/
+root@nesplandroid-desktop:/home/nespl-android/Desktop# chmod 777 -R Sunlord\ 05012015/
+

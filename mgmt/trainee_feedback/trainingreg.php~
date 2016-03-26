@@ -1,0 +1,121 @@
+<?php session_start();
+if(!isset($_SESSION['username']))
+{
+	header("location:index.php");
+}
+include("conn.php");
+?>
+<?php
+if(isset($_REQUEST['submit']))
+{
+	$que="insert into trregistration(trcode, trname, fromduration, toduration, trmode, trfees, lname, fname, nationality, address, city, state, country, postalcode, countrycode, phone, mobile, email, gradinstitute, gradbranch, gradyear, gradpercentage, pgradinstitute, pgradbranch, pgradyear, pgradpercentage, hostel, company, workfrom, workto, profile, company1, workfrom1, workto1, profile1, company2, workfrom2, workto2, profile2) values('".$_POST['trcode']."', '".$_POST['trname']."', '".$_POST['fromduration']."', '".$_POST['toduration']."', '".$_POST['trmode']."', '".$_POST['trfees']."', '".$_POST['lname']."', '".$_POST['fname']."', '".$_POST['nationality']."', '".$_POST['address']."', '".$_POST['city']."', '".$_POST['state']."', '".$_POST['country']."', '".$_POST['postalcode']."', '".$_POST['countrycode']."', '".$_POST['phone']."', '".$_POST['mobile']."', '".$_POST['email']."', '".$_POST['gradinstitute']."', '".$_POST['gradbranch']."', '".$_POST['gradyear']."', '".$_POST['gradpercentage']."', '".$_POST['pgradinstitute']."', '".$_POST['pgradbranch']."', '".$_POST['pgradyear']."', '".$_POST['pgradpercentage']."', '".$_POST['hostel']."', '".$_POST['company']."', '".$_POST['workfrom']."', '".$_POST['workto']."', '".$_POST['profile']."', '".$_POST['company1']."', '".$_POST['workfrom1']."', '".$_POST['workto1']."', '".$_POST['profile1']."', '".$_POST['company2']."', '".$_POST['workfrom2']."', '".$_POST['workto2']."', '".$_POST['profile2']."')"	;
+	
+	$qry=mysql_query($que)or die(mysql_query());
+	if($qry)
+	{
+		echo '<script>alert("Record Has Been Inserted!");</script>';
+		echo '<script>window.location="trainees.php";</script>';	
+	}
+}
+?>
+
+<?php include("header.php");?>
+<script>
+        function changeSecond(first){
+        var xmlhttp;
+        if (window.XMLHttpRequest)
+          {// code for IE7+, Firefox, Chrome, Opera, Safari
+          xmlhttp=new XMLHttpRequest();
+          }
+        else
+          {// code for IE6, IE5
+          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          }
+        xmlhttp.onreadystatechange=function()
+        {
+          if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+            var res=xmlhttp.responseText;
+            document.getElementById("second").innerHTML=res;
+            }
+          }
+        xmlhttp.open("GET","call_script.php?first="+first,true);
+        xmlhttp.send();
+        }
+        </script>
+<div style="clear:both;"></div>
+ <div class="rightpanel" style="clear:both;">
+    	<div class="headerpanel">
+        	<a href="#" class="showmenu"></a>
+            
+            <div class="headerright">
+            	<div class="dropdown notification">
+                    
+                </div><!--dropdown-->
+                
+    			<div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#"> 
+           Welcome <b><?php echo $_SESSION['username']?></b>
+                   
+         <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <!--<li><a href="editprofile.html"><span class="icon-edit"></span> Edit Profile</a></li>
+                        <li><a href="#"><span class="icon-wrench"></span> Account Settings</a></li>
+                        <li><a href="#"><span class="icon-eye-open"></span> Privacy Settings</a></li>
+                        <li class="divider"></li>-->
+                        <li><a href="sign_out.php"><span class="icon-off"></span> Sign Out</a></li>
+                    </ul>
+                </div><!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+        </div><!--breadcrumbs-->
+        <div class="pagetitle">
+        	<h1>Dashboard</h1>
+            
+        </div><!--pagetitle-->
+    <div style="margin:50px;color:#990000; margin-top:10px">
+    <form action="" method="post">
+    <table class="table table-bordered" style="text-align:center;">
+    <tr><td>Training Code</td><td><input type="text" name="trcode" placeholder="Enter Training code"></td></tr>
+    <tr><td>Training Name</td><td><input type="text" name="trname" placeholder="Enter Training Name"></td></tr>
+    <tr><td>Training Duration</td><td><input type="text" name="fromduration" placeholder="From(dd/mm/yyyy)"><input type="text" name="toduration" placeholder="To(dd/mm/yyyy)"></td></tr>
+    <tr><td>Training Mode</td><td><input type="text" name="trmode" placeholder="Instructor Lead - Regular/Part Time/Online/courseware - Self Study" style="width: 430px;"></td></tr>
+    <tr><td>Training Fees</td><td><input type="text" name="trfees" placeholder="Enter Training Fees"></td></tr>
+    <tr><td>Name</td><td><input type="text" name="lname" placeholder="Enter Last Name"><input type="text" name="fname" placeholder="Enter First Name"></td></tr>
+    <tr><td>Nationality</td><td><input type="text" name="nationality" placeholder="Enter Your Nationality"></td></tr>
+    <tr><td>Address</td><td><textarea name="address" rows="5" cols="20" placeholder="Enter Your Address"></textarea></td></tr>
+    <tr><td>City</td><td><input type="text" name="city" placeholder="Enter Your City"></td></tr>
+    <tr><td>State</td><td><input type="text" name="state" placeholder="Enter Your State"></td></tr>
+    <tr><td>Country</td><td><input type="text" name="country" placeholder="Enter Your Country"></td></tr>
+    <tr><td>Postal Code</td><td><input type="text" name="postalcode" placeholder="Enter Postal Code"></td></tr>
+    <tr><td>Phone</td><td><input type="text" name="countrycode" style="width:40px;" placeholder="Code"><input type="text" name="phone" placeholder="Enter Phone No."></td></tr>
+    <tr><td>Mobile</td><td><input type="text" name="countrycode" style="width:40px;" placeholder="Code"><input type="text" name="mobile" placeholder="Enter Mobile No."></td></tr>
+    <tr><td>Email Id</td><td><input type="text" name="email" placeholder="Enter Your Email"></td></tr>
+    <tr><td>Graduation</td><td><input type="text" name="gradinstitute" placeholder="Institute / University Name"><input type="text" name="gradbranch" placeholder="Enter Branch"><input type="text" name="gradyear" placeholder="Years (From-To)"><input type="text" name="gradpercentage" placeholder="percentage"></td></tr>
+    <tr><td>Post Graduation</td><td><input type="text" name="pgradinstitute" placeholder="Institute / University Name"><input type="text" name="pgradbranch" placeholder="Enter Branch"><input type="text" name="pgradyear" placeholder="Years (From-To)"><input type="text" name="pgradpercentage" placeholder="percentage"></td></tr>
+    <tr><td>Hostel Accommodation</td><td><select name="hostel"><option>No</option><option>Yes</option></select></td></tr>
+    <tr><td>Work Experience</td><td><input type="text" name="company" placeholder="Enter Compnay Name"><input type="text" name="workfrom" placeholder="From"><input type="text" name="workto" placeholder="To"><input type="text" name="profile" placeholder="Profile"></td></tr>
+    <tr><td></td><td><input type="text" name="company1" placeholder="Enter Compnay Name"><input type="text" name="workfrom1" placeholder="From"><input type="text" name="workto1" placeholder="To"><input type="text" name="profile1" placeholder="Profile"></td></tr>
+    <tr><td></td><td><input type="text" name="company2" placeholder="Enter Compnay Name"><input type="text" name="workfrom2" placeholder="From"><input type="text" name="workto2" placeholder="To"><input type="text" name="profile2" placeholder="Profile"></td></tr>
+    
+        </table><br>
+        <input type="submit" value="Submit" name="submit">
+        </form>
+        </div> 
+	 </div>         
+                     
+    
+    <div class="clearfix"></div>
+    
+    <!--footer-->
+    
+</div><!--mainwrapper-->
+
+</body>
+</html>
+
+        
+    
