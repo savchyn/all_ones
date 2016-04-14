@@ -5,10 +5,10 @@ $(document).ready(function(){
 $("#ajaxtrigger").append("<ul></ul>");
 });
 $.ajax({
-type: "GET",
-url: "http://allinone-mexico.com/admon/mxml_acceso.asp?usr=dvte4000&pwd=1234",
-dataType: "xml",
-success: function(xml) {
+type: "POST",
+url: "ajax_test.php",
+dataType: "html",
+success: function(html) {
 alert(xml);
 }
 $(xml).find('id').each(function(){
@@ -25,6 +25,7 @@ alert("The XML File could not be processed correctly.");
 <div id="abc">
 <ul></ul>
 </div>
-<p id="result" class="result"> </p>
-<a href="http://allinone-mexico.com/admon/mxml_acceso.asp?usr=dvte4000&pwd=1234" class="ajaxtrigger">load some content</a>
-<input type="submit" id="ajaxtrigger" value="Click" onclick="getState()">
+ <input type="checkbox" name="checkboxbrand[]" value="brand1"> Brand1<br>
+  <input type="checkbox" name="checkboxbrand[]" value="brand2"> Brand1<br>
+    <input type="checkbox" name="checkboxbrand[]" value="brand3"> Brand1<br>
+      <input type="checkbox" name="checkboxbrand[]" value="brand4"> Brand1<br>

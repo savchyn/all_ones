@@ -1,30 +1,28 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-//the variable to be appended here
-$("#ajaxtrigger").append("<ul></ul>");
-});
-$.ajax({
-type: "GET",
-url: "http://allinone-mexico.com/admon/mxml_acceso.asp?usr=dvte4000&pwd=1234",
-dataType: "html",
-success: function(html) {
-alert(xml);
-}
-$(xml).find('id').each(function(){
-var Titles = $(this).find('id').text();
-var Manufacturers = $(this).find('id').text();
-$("<li></li>").html(Titles + "-" + Manufacturers).appendTo("#abc ul");
-});
-error: function() {
-alert("The XML File could not be processed correctly.");
-}
-});
+   var opts = [];
+        $checkboxes.each(function(){
+          if(this.checked){
+            opts.push(this.name);
+          }
+        });
+
+        return opts;
+
+ $.ajax({
+          type: "POST",
+          url: "submit.php",
+          dataType : 'json',
+          cache: false,
+          data: {filterOpts: opts},
+          success: function(records){
+            $('#phones tbody').html(makeTable(records));
+          }
+        });
+
 
 </script>
-<div id="abc">
-<ul></ul>
-</div>
-<p id="result" class="result"> </p>
-<a href="http://allinone-mexico.com/admon/mxml_acceso.asp?usr=dvte4000&pwd=1234" class="ajaxtrigger">load some content</a>
-<input type="submit" id="ajaxtrigger" value="Click" onclick="getState()">
+ <input type="checkbox" id="" name="checkboxbrand[]" value="brand1"> Brand1<br>
+  <input type="checkbox" name="checkboxbrand[]" value="brand2"> Brand1<br>
+    <input type="checkbox" name="checkboxbrand[]" value="brand3"> Brand1<br>
+      <input type="checkbox" name="checkboxbrand[]" value="brand4"> Brand1<br>
