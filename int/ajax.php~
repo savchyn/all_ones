@@ -1,31 +1,28 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-//the variable to be appended here
-$("#ajaxtrigger").append("<ul></ul>");
-});
-$.ajax({
-type: "POST",
-url: "ajax_test.php",
-dataType: "html",
-success: function(html) {
-alert(xml);
-}
-$(xml).find('id').each(function(){
-var Titles = $(this).find('id').text();
-var Manufacturers = $(this).find('id').text();
-$("<li></li>").html(Titles + "-" + Manufacturers).appendTo("#abc ul");
-});
-error: function() {
-alert("The XML File could not be processed correctly.");
-}
-});
+   var opts = [];
+        $checkboxes.each(function(){
+          if(this.checked){
+            opts.push(this.name);
+          }
+        });
+
+        return opts;
+
+ $.ajax({
+          type: "POST",
+          url: "submit.php",
+          dataType : 'json',
+          cache: false,
+          data: {filterOpts: opts},
+          success: function(records){
+            $('#phones tbody').html(makeTable(records));
+          }
+        });
+
 
 </script>
-<div id="abc">
-<ul></ul>
-</div>
- <input type="checkbox" name="checkboxbrand[]" value="brand1"> Brand1<br>
+ <input type="checkbox" id="" name="checkboxbrand[]" value="brand1"> Brand1<br>
   <input type="checkbox" name="checkboxbrand[]" value="brand2"> Brand1<br>
     <input type="checkbox" name="checkboxbrand[]" value="brand3"> Brand1<br>
       <input type="checkbox" name="checkboxbrand[]" value="brand4"> Brand1<br>
