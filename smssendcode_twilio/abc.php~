@@ -1,7 +1,20 @@
+
+ <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
+   <input type="text" id="mobile_number" name="mobile_number_code" placeholder="Mobile Number" ><br><br>
+  <textarea name="message" placeholde="Write Your Message">Write Text Message</textarea><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Send SMS">
+  
+</form>
 <?php
-   
+$path="vendor/twilio/sdk/Services/Twilio.php";
+echo file_exists($path);
+    if(isset($_POST['mobile_number_code'])){
+    
+//echo $_POST['mobile_number_code'];
+
     require "vendor/twilio/sdk/Services/Twilio.php";
- 
+echo file_exists("test.txt");
+ $message = "wrong answer";
+echo "<script type='text/javascript'>alert('$message');</script>";
     // Step 2: set our AccountSid and AuthToken from www.twilio.com/user/account
     $AccountSid = "AC25b077f065860984d4436fffbb180f38";
     $AuthToken = "96a6952aa2cc0947f64f493fd76c2c01";
@@ -11,8 +24,10 @@
  
     // Step 4: make an array of people we know, to send them a message. 
     // Feel free to change/add your own phone number and name here.
+    $num=$_POST['mobile_number_code'];
+    $otp=rand(15000,99000);
     $people = array(
-        "+918882331617" => "Mahender Dusad",
+         $num =>$otp,
     );
  
     // Step 5: Loop over all our friends. $number is a phone number above, and 
@@ -33,5 +48,8 @@
         );
  
         // Display a confirmation message on the screen
-        echo "Sent message to $name";
+       //echo "<script type='text/javascript'>alert('OTP Sent On your Number');</script>";
+echo "Message send Successfully";
     }
+
+}
